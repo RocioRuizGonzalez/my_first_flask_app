@@ -24,7 +24,7 @@ books = [
         ]
 
 # GET Display all the books
-@app.route('', methods=['GET']) 
+@app.route('/api/v1/resources/books/all', methods=['GET']) 
 def api_all():
     return jsonify(books)
 
